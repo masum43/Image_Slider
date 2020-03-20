@@ -2,26 +2,18 @@ package com.example.imageslider;
 
 public class SliderItem {
 
-    int imageGif;
     String imageUrl;
     String textDesc;
 
     public SliderItem() {
     }
 
-    public SliderItem(int imageGif, String imageUrl, String textDesc) {
-        this.imageGif = imageGif;
+    public SliderItem( String imageUrl, String textDesc) {
+
         this.imageUrl = imageUrl;
         this.textDesc = textDesc;
     }
 
-    public int getImageGif() {
-        return imageGif;
-    }
-
-    public void setImageGif(int imageGif) {
-        this.imageGif = imageGif;
-    }
 
     public String getImageUrl() {
         return imageUrl;

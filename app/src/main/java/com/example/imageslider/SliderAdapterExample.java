@@ -53,7 +53,7 @@ public class SliderAdapterExample extends
 
         viewHolder.textViewDescription.setText(sliderItem.getTextDesc());
         viewHolder.textViewDescription.setTextSize(16);
-        viewHolder.textViewDescription.setTextColor(Color.WHITE);
+        viewHolder.textViewDescription.setTextColor(Color.BLUE);
         Glide.with(viewHolder.itemView)
                 .load(sliderItem.getImageUrl())
                 .fitCenter()
@@ -83,8 +83,8 @@ public class SliderAdapterExample extends
         public SliderAdapterVH(View itemView) {
             super(itemView);
             imageViewBackground = itemView.findViewById(R.id.iv_auto_image_slider);
-            imageGifContainer = itemView.findViewById(R.id.iv_gif_container);
-            textViewDescription = itemView.findViewById(R.id.tv_auto_image_slider);
+            //imageGifContainer = itemView.findViewById(R.id.iv_gif_container);
+            textViewDescription = itemView.findViewById(R.id.single_text);
             this.itemView = itemView;
         }
     }
